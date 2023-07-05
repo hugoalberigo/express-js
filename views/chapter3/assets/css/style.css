@@ -1,0 +1,417 @@
+#fullsite {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    height: auto;
+    width: auto;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+}
+
+h2 {
+    font-family: open-sans;
+    font-size: 60px;
+}
+
+body {
+    font-family: open-sans;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 5rem;
+    margin: 0;
+}
+
+#logo {
+    width: auto;
+    margin-left: 6rem;
+}
+
+#menu {
+    justify-content: flex-start;
+    margin-left: 6rem;
+}
+
+#user {
+    margin-right: 6rem;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    padding: 20px;
+    font-size: 12px;
+    width: 8vw;
+}
+
+.nav-link {
+    background-color: transparent;
+    border-style: none;
+}
+
+/* Form Register */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.formSignup, .formLogin{
+    display: grid;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: black;
+  }
+
+  .modal-content {
+    background-color: white;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 60%;
+    text-align: left;
+    padding: 30px;
+  }
+
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+  }
+  
+  .close:hover, .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+
+  .signupbtn, .loginbtn {
+    float: left;
+    font-size: 16px;
+    padding: 12px 100px 12px 100px;
+    background-color: rgb(255, 183, 50);
+  }
+
+/* Home Page */
+#home {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    background-image: url(../main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+#play-text {
+    margin-top: 30vh;
+}
+
+#experience-text {
+    font-size: 18px;
+    margin-top: 7vh;
+}
+
+#play-game {
+    align-content: center;
+    margin-top: 7vh;
+}
+
+#yellow-button {
+    background-color: rgb(255, 183, 50);
+    font-size: 16px;
+    padding: 12px 100px 12px 100px;
+}
+
+#the-story {
+    margin-top: 20vh;
+    margin-bottom: 0;
+    font-size: 11px;
+}
+
+/* What's so Special Page */
+
+#what-special {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../the-games-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#rock-paper {
+    background-image: url(../rockpaperstrategy-1600.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: static;
+    height: 20em;
+    width: 40em;
+    margin-top: 28vh;
+}
+
+#img-dot {
+    margin-left: 2vw;
+    margin-top: 9em;
+}
+
+/* Features Page */
+#features {
+    display: grid;
+    grid-template-columns: 50vw auto;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../features.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#feature-text {
+    grid-column-start: 2;
+    margin-top: 25vh;
+}
+
+/* System Requirements Page */
+#sys-req {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 15vh 82vh;
+    height: 100%;
+    width: 100%;
+    background-image: url(../requirements.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#sys-tbl {
+    display: grid;
+    grid-template-columns: 40vw auto;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+th {
+    font-weight: normal;
+}
+
+#table-title {
+    color: rgb(255, 183, 50);
+}
+
+/* Top Scores Page */
+#top-scores {
+    display: grid;
+    height: auto;
+    width: 100vw;
+    background-image: url(../top-score-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#see-more {
+    margin-top: 50px;
+}
+
+#score-list {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 20vh 20vh 20vh;
+    margin-top: 160px;
+    row-gap: 20px;
+}
+
+.card-list {
+    background-color: rgba(158, 158, 158, 0.3);
+    border-radius: 15px;
+    width: 450px;
+}
+
+#evan {
+    margin-left: 30%;
+}
+
+#aaron {
+    margin-left: 20%;
+}
+
+.card-name {
+    height: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.ellipse-orange {
+    background-image: url(../ellipse-orange.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 60%;
+    height: 10vh;
+}
+
+.photo-player {
+    height: 67px;
+    border-radius: 50%;
+    border: none;
+    margin-top: 10px;
+}
+
+.name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #FFB548;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.status {
+    font-family: open-sans;
+    font-size: 18px;
+    color: white;
+    opacity: 0.5;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.pl-comment {
+    font-size: 18px;
+}
+
+.date {
+    font-size: 14px;
+    opacity: 0.5;
+}
+
+/* Newsletter Subscribe Page */
+#newsletter {
+    display: grid;
+    grid-template-columns: 45vw 52vw;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+
+#footer-background {
+    background-image: url(../skull.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    opacity: 0.5;
+}
+
+#subscribe {
+    min-height: 20vh;
+    width: 40vw;
+}
+
+#email-subscribe {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    height: 70px;
+}
+
+/* Footer */
+#footer-bar {
+    grid-column: 1/span 2;
+    text-align: right;
+}
+
+.footer-item {
+    text-decoration: none;
+    color: white;
+    font-family: open-sans;
+    font-size: 12px;
+    margin-right: 3vw;
+}
+#copyright {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 14px;
+    font-family: open-sans;
+}
+
+/* Font */
+ @font-face {
+    font-family: open-sans;
+    src: url(../font/OpenSans-Regular.ttf);
+ }
+
+/* Responsive untuk layar yg lebih kecil */
+ @media only screen and (max-width: 1366px) {
+    h1{
+        font-size: 70px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    #img-dot {
+        margin-top: 9em;
+    }
+    th {
+        font-size: 12px;
+        width: 30%;
+    }
+    td {
+        font-size: 12px;
+        width: 30%;
+    }
+    .card-list {
+        height: 20vh;
+    }
+    .card-name {
+        margin-top: 10px;
+    }
+    #score-list {
+        margin-top: 10vh;
+    }
+    .ellipse-orange {
+        background-size: 35%;
+    }
+    .photo-player{
+        height: 55%;
+        margin-left: 20px;
+    }
+    .name {
+        font-size: 14px;
+    }
+    .status {
+        font-size: 12px;
+    }
+    .pl-comment {
+        font-size: 12px;
+    }
+    .date {
+        font-size: 10px;
+    }
+ }

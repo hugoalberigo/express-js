@@ -1,0 +1,114 @@
+#play-game {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    background-color: #9C835F;
+}
+
+#game-title {
+    display: grid;
+    grid-template-columns: 5vw 80vw;
+    grid-template-rows: auto;
+}
+
+h1{
+    align-self: center;
+}
+
+.name {
+    display: grid;
+    width: 223px;
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    justify-items: center;
+    align-items: center;
+}
+
+#player-hand {
+    display: grid;
+    justify-items: end;
+    padding-right: 5vw;
+}
+
+/* Tombol pilihan pemain */
+.player-choice {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-radius: 30px;
+    width: 223px;
+    height: 204px;
+}
+
+.batu {
+    background-image: url(../batu.png);
+    background-size: 128px 92px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.kertas {
+    background-image: url(../kertas.png);
+    background-size: 115px 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gunting {
+    background-image: url(../gunting.png);
+    background-size: 134px 160px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#vsText {
+    height: 186px;
+    font-size: 144px;
+    font-weight: 700;
+    color: #BD0000;
+    text-align: center;
+    margin: 0;
+}
+
+#result {
+    width: 240px;
+    height: 135px;
+    font-size: 38px;
+    font-weight: 700;
+    color: white;
+    background-color: green;
+    text-align: center;
+    margin: 0;
+    padding-top: 5px;
+    transform: rotate(-29deg);
+    display: none;
+}
+
+#com-hand {
+    padding-left: 5vw;
+}
+
+/* Pilihan computer */
+.com-choice {
+    display: grid;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    width: 223px;
+    height: 204px;
+    justify-items: center;
+    align-items: center;
+}
+
+#refresh {
+    display: grid;
+    justify-items: center;
+}
+
+#refresh-btn {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+#refresh-img {
+    width: 77px;
+    height: 71px;
+}

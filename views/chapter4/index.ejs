@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" content="width=device-width, initial-scale=1">
+        <title>Tugas Chapter 4</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/chapter4/assets/bootstrap/css/bootstrap.css"/>
+        <!-- CSS -->
+        <link rel="stylesheet" href="/chapter4/assets/css/style.css"/>
+    </head>
+    <body class="container-fluid" id="play-game">
+        <div id="game-title">
+            <a href="/" style="text-decoration: none;">
+                <p style="color: #724C21; font-size: 72px;" >&lt;</p>
+            </a>
+            <h1 style="color: #F9B23D; font-size: 36px;">ROCK PAPER SCISSORS</h1>
+        </div>
+        <div class="container-fluid" id="game-play">
+            <div class="row">
+                <div class="col-lg-5 col-sm-4" id="player-hand">
+                    <div class="name"><p id="player-text"><%= username %></p></div>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-sm-4 offset-sm-4" id="com-hand">
+                    <div class="name"><p id="com-text">COM</p></div>
+                </div>
+            </div>
+            <!-- Tombol pilihan batu -->
+            <div class="row">
+                <div class="col-lg-5 col-sm-4" id="player-hand">
+                    <button data-choice="rock" class="player-choice batu"></button>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-sm-4 offset-sm-4" id="com-hand">
+                    <div class="com-choice batu"></div>
+                </div>
+            </div>
+            <!-- Tombol pilihan kertas -->
+            <div class="row">
+                <div class="col-lg-5 col-sm-4" id="player-hand">
+                    <button data-choice="paper" class="player-choice kertas"></button>
+                </div>
+                <div class="col-lg-2 col-sm-4">
+                    <p id="vsText">VS</p>
+                    <p id="result"></p>
+                </div>
+                <div class="col-lg-5 col-sm-4" id="com-hand">
+                    <div class="com-choice kertas"></div>
+                </div>
+            </div>
+            <!-- Tombol pilihan gunting -->
+            <div class="row">
+                <div class="col-lg-5 col-sm-4" id="player-hand">
+                    <button data-choice="scissors" class="player-choice gunting"></button>
+                </div>
+                <div class="col-lg-5 offset-lg-2 col-sm-4 offset-sm-4" id="com-hand">
+                    <div class="com-choice gunting"></div>
+                </div>
+            </div>
+            <!-- Tombol refresh halaman -->
+            <div id="refresh">
+                <button id="refresh-btn">
+                    <img src="/chapter4/assets/refresh.png" id="refresh-img"/>
+                </button>
+            </div>
+        </div>
+        <!-- JS -->
+        <script src="/chapter4/assets/js/index.js"></script>
+    </body>
+</html>
